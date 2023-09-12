@@ -52,7 +52,7 @@ struct ContentView: View {
                     Text("0")
                         .bold()
                         .font(.system(size: 64))
-                        .foregroundColor(.white)
+                        .foregroundColor(.green)
                 }
                 .padding()
                 ForEach(buttons, id: \.self){ row in
@@ -65,7 +65,7 @@ struct ContentView: View {
                                     .font(.system(size: 32))
                                     .frame(width: self.buttonWidth(item: item), height: self.buttonHeight())
                                     .background(item.buttonColor)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.purple)
                                     .cornerRadius(self.buttonWidth(item: item)/2)
                             })
                         }
